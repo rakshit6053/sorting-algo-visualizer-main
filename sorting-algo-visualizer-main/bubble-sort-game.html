@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sorting Algorithm Visualizer</h1>
+        <nav>
+            <a href="index.html">Main Visualizer</a>
+            <a href="bubble-sort-game.html">Bubble Sort Game</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Bubble Sort Game</h2>
+            <div id="array-container"></div>
+            <div class="buttons">
+                <button id="undo-btn" disabled>Undo</button>
+                <button id="swap-btn">Swap</button>
+                <button id="pass-btn">Pass</button>
+                <button id="redo-btn" disabled>Redo</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <p id="message"></p>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Congratulations!</h2>
+                <p>You've successfully sorted the array!</p>
+                <button id="new-game-btn">New Game</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2024 Sorting Algorithm Visualizer. Created by Santhosh, Rakshit and team for ADA assignment (educational purpose).
+    </footer>
+    <script src="bubble-sort-game.js"></script>
+</body>
+</html>

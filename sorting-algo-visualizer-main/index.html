@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sorting Algorithm Visualizer</h1>
+        <nav>
+            <a href="index.html">Main Visualizer</a>
+            <a href="bubble-sort-game.html">Bubble Sort Game</a>
+        </nav>
+    </header>
+    <main>
+        <div class="controls">
+            <button id="generateArray">Generate New Array</button>
+            <button id="mergeSort">Merge Sort</button>
+            <button id="quickSort">Quick Sort</button>
+            <button id="insertionSort">Insertion Sort</button>
+        </div>
+        <div id="arrayContainer"></div>
+        <div class="info">
+            <p>Array size: <span id="arraySize"></span></p>
+            <p>Time taken: <span id="timeTaken"></span></p>
+        </div>
+    </main>
+    <section id="about">
+        <h2>About Sorting Algorithms</h2>
+        <div class="algorithm">
+            <h3>Merge Sort</h3>
+            <p>Merge Sort is a divide-and-conquer algorithm that divides the input array into two halves, recursively sorts them, and then merges the two sorted halves. It has a time complexity of O(n log n) for all cases.</p>
+        </div>
+        <div class="algorithm">
+            <h3>Quick Sort</h3>
+            <p>Quick Sort is also a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then recursively sorted. It has an average time complexity of O(n log n), but can degrade to O(n^2) in the worst case.</p>
+        </div>
+        <div class="algorithm">
+            <h3>Insertion Sort</h3>
+            <p>Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is a stable sorting algorithm, meaning that elements with equal values maintain their relative order in the sorted output.It has a best case time complexity of O(n), but can degrade to O(n^2) in the worst case.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sorting Algorithm Visualizer. Created by Santhosh and team for ADA assignment (educational purpose) .</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
